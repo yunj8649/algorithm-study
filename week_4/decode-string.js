@@ -24,12 +24,12 @@ var decodeString = function(s) {
             currentStr = '';
         } else if (s[i] === ']') {
             let prevStr = stack.pop();
-            currentStr = prevStr + currentStr.repeat(Number(num))
+            currentStr = prevStr + currentStr.repeat(Number(num));
             num = '';
         } else if (!Number.isNaN(Number(s[i]))) {
             num += s[i];
         } else {
-            currentStr += s[i]
+            currentStr += s[i];
         }
         console.log('stack : ' , stack);
         console.log('num : ', num);
@@ -39,4 +39,4 @@ var decodeString = function(s) {
     return currentStr;
 }
 
-console.log(decodeString('3[a]2[bc]'))
+console.log(decodeString('3[a]2[bc]'));
