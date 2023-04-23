@@ -1,3 +1,7 @@
+// this week question: https://leetcode.com/problems/interval-list-intersections/description/
+// similar question: https://www.acmicpc.net/problem/11404
+// ref video: https://www.youtube.com/watch?v=SrMk-EdWRUE
+
 function intervalIntersection(firstList: number[][], secondList: number[][]): number[][] {
     let i: number = 0;
     let j: number = 0;
